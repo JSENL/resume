@@ -1,0 +1,359 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+   background: url(../image/sea.png);
+  color: #ffffff;
+}
+/* header */
+header {
+  padding-top: 100px;
+  position: relative;
+
+}
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+#contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+.element {
+  display: inline-block;
+  background-color: #C20A0F;
+  color: #000;
+  height: 100px;
+  width: 70px;
+  font-size: 25px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 30px;
+  animation: skew 7s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .7;
+  text-align: center;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  25% {
+  transform: skewY(90deg);
+  }
+  75%
+  {
+  transform: skewY(0deg)  
+  }
+  100% {
+    transform: skewX(-90deg);
+  }
+}
+.elements {
+  display: inline-block;
+  background-color: #116EA6;
+  color: #fff;
+  height: 100px;
+  width: 100px;
+  font-size: 25px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 15px;
+  animation: skew 7s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate-reverse;
+  opacity: .7;
+  text-align: center;
+}
+.elementa {
+  display: inline-block;
+  background-color: #C20A0F;
+  color: #000;
+  height: 100px;
+  width: 45px;
+  font-size: 25px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 7s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .7;
+  text-align: center;
+}
+.elementb {
+  display: inline-block;
+  background-color: #116EA6;
+  color: #fff;
+  height: 100px;
+  width: 45px;
+  font-size: 25px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 7s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate-reverse;
+  opacity: .7;
+  text-align: center;
+}
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: url(../image/dark.png);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+nav a:hover {
+ background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* Work Experience
+-------------------------*/
+#work {
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(../image/dorchester.jpg) no-repeat fixed;
+  background-size: cover;}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+
+/* Education
+-------------------------*/
+#education {
+color: #fff; 
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 80%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
+
+/*Space Background*/
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(image/download.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(image/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url(image/celestial.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
